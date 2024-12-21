@@ -506,7 +506,7 @@ struct gpiod_line *linuxgpio_libgpiod_lines[N_PINS];
 // Returns True (non-zero) if it looks like libgpiod will work, False
 // (zero) if libgpiod will not work.
 static int libgpiod_is_working(void) {
-  char const *filename = "/dev/gpiochip0";
+  char const *filename = "/dev/gpiochip4";
   struct gpiod_chip *gpiod_chip_ptr;
 
   gpiod_chip_ptr = gpiod_chip_open(filename);
